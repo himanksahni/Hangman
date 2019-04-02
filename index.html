@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+
+    <title></title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <h1> Hangman</h1>
+
+            <div class="muteBtn">
+                <div class="muteBtnI"><i class="fas fa-volume-mute mute"></i></div>
+            </div>
+
+
+        </header>
+
+
+        <main>
+
+            <div class="gameArea">
+
+                <div class="start">
+
+                    <div class="gif"><img src="images/main.gif" alt="hangman GIF"></div>
+                    <div class="options">
+
+                        <ul>
+
+                            <li class="start-area"><a href="#" id="strt-btn">Start</a></li>
+                            <li class="start-area"><a href="#" id="rules-btn">Rules</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="gameArea2">
+
+                <div class="categories">
+
+                    <span class="back"><i class="fas fa-arrow-left"></i></span>
+                    <h2> Categories</h2>
+
+                    <ul class="categories-option">
+
+
+                        <li class="opt"><a href="#" class="sports">Sports</a> </li>
+                        <li class="opt"><a href="#" class="movies"> Movies </a> </li>
+                        <li class="opt"> <a href="#" class="tech"> Technology</a> </li>
+                    </ul>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="levels">
+
+                <p>Level: <span id="lev">0</span></p>
+                <p>Chances Left: <span id="chances">10</span></p>
+                <p> Time: <span id="time">120</span></p>
+
+            </div>
+
+            <div class="letters">
+
+                <span class="hov a">A</span> <span class="hov b">B</span> <span class="hov c">C</span> <span class="hov d">D</span> <span class="hov e">E</span> <span class="hov f">F</span> <span class="hov g">G</span> <span class="hov h">H</span> <span class="hov i">I</span> <span class="hov j">J</span> <span class="hov k">K</span> <span class="hov l">L</span> <span class="hov m">M</span> <span class="hov n">N</span> <span class="hov o">O</span> <span class="hov p">P</span> <span class="hov q">Q</span> <span class="hov r">R</span> <span class="hov s">S</span> <span class="hov t">T</span> <span class="hov u">U</span> <span class="hov v">V</span> <span class="hov w">W</span> <span class="hov x">X</span> <span class="hov y">Y</span> <span class="hov z">Z</span>
+
+
+
+            </div>
+
+            <div class="main-game">
+                <div id="close"> +</div>
+                <div class="not-letters">
+                    <div class="not-letters2"></div>
+                </div>
+                <div class="hangGif">
+                    <hr>
+                </div>
+
+
+
+            </div>
+
+            <section class="winLose"></section>
+
+            <section class="homeBtn">HOME</section>
+
+
+            <div class="rules">
+
+                <span class="back2"><i class="fas fa-arrow-left"></i></span>
+
+                <h2> Rules and Regulations</h2>
+
+                <ul id="rules">
+
+
+                    <li><strong>DO NOT EVEN THINK THAT THE DESIGN OF THIS GAME IS BAD.</strong></li>
+                    <li>Choose any category you want to play game in.</li>
+                    <li>You will have 10 chances in total and 6 levels to complete.</li>
+                    <li>You you guess a letter wrong one chance will be reduced and you will loose if it's 0.</li>
+                    <li>You will also have 120 seconds to guess the word and it will reset at every level.</li>
+                    <li>If time reaches 0 you loose the game.</li>
+                    <li>Clear all the six levels to win.</li>
+                </ul>
+
+
+            </div>
+
+
+        </main>
+
+
+        <section class="guessArea">
+
+            <div class="guess"></div>
+
+
+        </section>
+
+
+
+
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+
+
+</html>

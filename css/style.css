@@ -1,0 +1,632 @@
+body {
+
+    height: 100%;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    /*    background: #ffd938;*/
+
+
+}
+
+
+
+
+html {
+
+    box-sizing: border-box;
+    height: 100%;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    /*    background: #ffd938;*/
+    background-image: url(../images/background.jpg);
+    opacity: 0.8;
+
+
+
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: 1fr;
+    /*    background: #ffd938;*/
+    margin: auto;
+}
+
+header {
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 8px;
+    grid-template-rows: repeat(2, auto);
+    color: #000000;
+
+}
+
+header h1 {
+
+    font-size: 2.9rem;
+    grid-column: 6/9;
+    grid-row: 1/3;
+    word-break: break-all;
+}
+
+.muteBtn {
+
+    grid-column: 9/11;
+    grid-row: 1/3;
+    text-align: center;
+    padding-top: 1.3em;
+    font-size: 2em;
+}
+
+.mute:hover {
+
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+main {
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 8px;
+
+}
+
+main .gameArea {
+
+    grid-column: 3/11;
+    grid-row: 1/7;
+    /*    background-color: #ffd938;*/
+    display: flex;
+    justify-content: center;
+
+}
+
+main .start {
+
+    background: #ffffff;
+    max-width: 90%;
+    margin: 27px auto 27px auto;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+main .gif {
+
+    width: 50%;
+}
+
+main .options {
+
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 3rem;
+
+}
+
+main img {
+
+    width: 100%;
+    height: 18rem;
+}
+
+main ul {
+
+    list-style: none;
+
+}
+
+main .start-area {
+
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+main a {
+
+    text-decoration: none;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: cornflowerblue;
+
+}
+
+main a:hover {
+
+    background-color: aqua;
+    color: black;
+}
+
+
+main #gameArea2 {
+
+    grid-column: 3/11;
+    grid-row: 1/7;
+    /*    background-color: #ffd938;*/
+    display: none;
+
+}
+
+
+main .categories {
+
+    background: #ffffff;
+    width: 90%;
+    margin: 27px auto 27px auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+main h2 {
+
+    text-align: center;
+}
+
+main .categories-option {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+main .opt {
+
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+}
+
+main .levels {
+
+    grid-column: 9/12;
+    grid-row: 1/3;
+    background-color: black;
+    color: white;
+    padding-left: 5%;
+    margin-left: 5%;
+    display: none;
+}
+
+main .letters {
+
+    grid-column: 9/12;
+    grid-row: 3/7;
+    background-color: black;
+    color: white;
+    margin-left: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 3rem;
+    word-spacing: 1rem;
+    font-size: 1.3rem;
+    display: none;
+}
+
+.hov:hover {
+
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+main .main-game {
+
+    grid-column: 2/9;
+    grid-row: 1/7;
+    background-color: white;
+    display: none;
+
+
+}
+
+.guessArea {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 4rem);
+
+}
+
+.guess {
+
+    grid-column: 2/12;
+    background-color: white;
+    color: black;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 1.8rem;
+    display: none;
+    text-transform: uppercase;
+    word-spacing: 1.5rem;
+
+}
+
+
+.not-letters {
+    width: 100%;
+    height: 22%;
+    letter-spacing: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.winLose {
+
+    grid-column: 3/11;
+    grid-row: 1/7;
+    background-color: white;
+    border: #000 2rem solid;
+    text-align: center;
+    padding-top: 20px;
+    display: none;
+}
+
+
+.fa-smile {
+    font-size: 7rem;
+}
+
+.win {
+
+    font-size: 3rem;
+}
+
+.back {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+
+.back:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#close {
+    font-size: 25px;
+    transform: rotate(45deg);
+    float: right;
+    padding-right: 10px;
+}
+
+#close:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.hangGif {
+    height: 75%;
+}
+
+.gameHangGif {
+    width: 50%;
+    height: auto;
+}
+
+.lastGif {
+
+    width: 50%;
+    height: 12rem;
+}
+
+.homeBtn {
+
+    grid-column: 11/13;
+    grid-row: 1/2;
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: none;
+
+}
+
+.homeBtn:hover {
+
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+}
+
+.not-letters2 {
+    word-break: break-all;
+}
+
+
+.rules {
+
+    grid-column: 3/11;
+    grid-row: 1/7;
+    background-color: #ffffff;
+    display: none;
+
+}
+
+#rules {
+    list-style: circle;
+    line-height: 25px;
+}
+
+.back {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.back2 {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.back2:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:767px) {
+
+    header h1 {
+
+        font-size: 1.1rem;
+        word-break: break-all;
+        padding-top: 1.9rem;
+
+
+    }
+
+    .muteBtn {
+
+
+        padding-top: 1.5em;
+        font-size: 1.7em;
+    }
+
+    main .gameArea {
+
+        grid-column: 1/13;
+        grid-row: 1/7;
+        /*    background-color: #ffd938;*/
+        display: flex;
+        justify-content: center;
+
+    }
+
+    main .start {
+
+        background: #ffffff;
+        max-width: 90%;
+    }
+
+    main a {
+
+
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        background-color: cornflowerblue;
+
+    }
+
+    main #gameArea2 {
+
+        grid-column: 1/13;
+        grid-row: 1/7;
+        /*    background-color: #ffd938;*/
+        display: none;
+
+    }
+
+
+    main .categories {
+
+        background: #ffffff;
+        width: 90%;
+        margin: 27px auto 27px auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    main .main-game {
+
+        grid-column: 2/9;
+        grid-row: 1/4;
+        background-color: white;
+        display: none;
+
+
+    }
+
+    .guess {
+
+        letter-spacing: 5px;
+        font-size: 1rem;
+
+    }
+
+
+    .not-letters {
+        letter-spacing: 0.5rem;
+        font-size: 1rem;
+
+    }
+
+    main .letters {
+
+        grid-column: 9/12;
+        grid-row: 3/4;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 0.7rem;
+        word-spacing: 0.6rem
+    }
+
+    .levels {
+
+
+        padding-left: 5%;
+        margin-left: 5%;
+        font-size: 0.7rem;
+    }
+
+    .winLose {
+
+        grid-column: 1/13;
+        grid-row: 1/5;
+
+        border: #000 1rem solid;
+
+    }
+
+    .homeBtn {
+
+        grid-column: 5/10;
+        grid-row: 6/7;
+        background-color: cornflowerblue;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        display: none;
+
+    }
+
+
+}
+
+
+
+@media only screen and (min-width:768px) {
+
+    header h1 {
+
+        font-size: 2.5rem;
+        word-break: break-all;
+        padding-top: 1.9rem;
+
+
+    }
+
+
+}
+
+@media only screen and (min-width:1300px) {
+
+    header h1 {
+
+        font-size: 2.5rem;
+        word-break: break-all;
+        padding-top: 1.9rem;
+
+
+    }
+
+    main .main-game {
+
+        grid-column: 3/8;
+        grid-row: 1/10;
+        background-color: white;
+        display: none;
+
+
+    }
+
+    main .levels {
+
+        grid-column: 8/10;
+        grid-row: 1/3;
+    }
+
+    main .letters {
+
+        grid-column: 8/10;
+        grid-row: 3/10;
+        font-size: 2rem;
+        word-spacing: 3.5rem;
+
+    }
+
+    .guess {
+
+        grid-column: 3/10;
+
+    }
+
+    .muteBtn {
+
+        grid-column: 7/10;
+        grid-row: 1/3;
+        text-align: center;
+        padding-top: 1.8em;
+        font-size: 2em;
+    }
+
+
+    .winLose {
+
+        grid-column: 4/9;
+        grid-row: 1/7;
+
+        border: #000 1rem solid;
+
+    }
+
+    .homeBtn {
+
+        grid-column: 4/9;
+        grid-row: 7;
+        background-color: cornflowerblue;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        display: none;
+
+    }
+
+    main #gameArea2 {
+
+        grid-column: 4/10;
+        grid-row: 1/13;
+        /*    background-color: #ffd938;*/
+        display: none;
+
+    }
+
+
+
+
+
+}
